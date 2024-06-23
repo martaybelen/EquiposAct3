@@ -66,7 +66,7 @@ Modificación del modo 2 para control de la iluminación mediante lógica difusa
 más basado en lógica difusa. La comuntación entre modos se hace mediante el mando IR Remote. Las dos opciones de control del modo 2 son:
 
 | Modos | varibale ModoControl | Funcionalidad |
-|:----|------------:|
+|:----|------|------:|
 |Modo Fuzzy| 1 |Seleccion de leds a encender en función de la iluminación por lógica difusa|
 |Modo control al 80%| 0 | Control de iluminación para lograr entorno al **80%** |
 
