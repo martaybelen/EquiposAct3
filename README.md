@@ -92,6 +92,9 @@ más basado en lógica difusa. La comuntación entre modos se hace mediante el m
 
 **mostrarIluminacion():** Muestra en el LDC la lux en % en el caso de control al 80% o un valor de 0 a 10000 en caso de control con Fuzzy cada vez que hay una actualización de su valor.
 
+### El esquema de conexiones resultante en esta actividad:
+![Esquema de conexiones](esquema_de_conexiones.PNG)
+
 ### NOTA IMPORTANTE WOKWI:
 Para simular la repercusión de encender leds para lograr ese 80% se fuerzan variaciones de la variable lux que demuestren el funcionamiento de este modo. Se comienza con una medición tomada del sensor y después se continúa como valor de lux el resultante de la función **controlarIluminacion()**. Cuando se enciende un led más el lux obtenido se incrementa +2, cuando se apaga un led se reduce -2. De esta forma se espera simular el impacto que tendría en la realidad regular la iluminación de la sala.
 
