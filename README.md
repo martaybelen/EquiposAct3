@@ -88,13 +88,14 @@ más basado en lógica difusa. La comuntación entre modos se hace mediante el m
 ##### Nuevas funciones auxiliares incluidas para desarrollar el modo 2
 **encenderLeds():** Para el modo de control con Fuzzy, selecciona los leds que hay que encender según la fuzzy logic y los enciende. A menor iluminación más leds se encenderán.
 
-**controlarIluminacion():**enciende leds hasta lograr una iluminación en torno al 80%, Si se supera el margen, apaga leds. Se establece un rango de iluminación entre 78% y 82%.
+**controlarIluminacion():** Enciende leds hasta lograr una iluminación en torno al 80%, Si se supera el margen, apaga leds. Se establece un rango de iluminación entre 78% y 82%.
 
-**mostrarIluminacion():**Muestra en el LDC la lux en % en el caso de control al 80% o un valor de 0 a 10000 en caso de control con Fuzzy cada vez que hay una actualización de su valor.
+**mostrarIluminacion():** Muestra en el LDC la lux en % en el caso de control al 80% o un valor de 0 a 10000 en caso de control con Fuzzy cada vez que hay una actualización de su valor.
 
 ### NOTA IMPORTANTE WOKWI:
 Para simular la repercusión de encender leds para lograr ese 80% se fuerzan variaciones de la variable lux que demuestren el funcionamiento de este modo. Se comienza con una medición tomada del sensor y después se continúa como valor de lux el resultante de la función **controlarIluminacion()**. Cuando se enciende un led más el lux obtenido se incrementa +2, cuando se apaga un led se reduce -2. De esta forma se espera simular el impacto que tendría en la realidad regular la iluminación de la sala.
 
 ### NOTA IMPORTANTE PINES:
 Debido a la insufuencia de pines se reutilizan algunos para varias funcionalidades diferentes, como puede ser los leds del modo iluminación y el led RGB que sin ser empleado en este modo, su iluminación varía debido a compartir pines con otros leds.
+Se ha optado por empelar un Arduino MEGA para realizar el montaje del sistema para contar con suficienets pines para realizar la actividad
 
