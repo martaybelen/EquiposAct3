@@ -15,7 +15,7 @@
 #### Los resultados de las mediciones a través del correspondiente sensor en cada modo se presentada en una pantalla LCD.
 
 ### El sistema propuesto en wokwi se presenta en la siguiente imagen
-![Sistema propuesto en Wokwi](Captura.png)
+![Sistema propuesto en Wokwi](Captura.PNG)
 
 ### Novedades incorporadas al sistema:
 #### Nueva forma para cambiar de modo
